@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C7A3EE1257B2DD00000CC55 /* Viagem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7A3EE0257B2DD00000CC55 /* Viagem.swift */; };
+		0C7A3EE3257B301F0000CC55 /* ViagemDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7A3EE2257B301F0000CC55 /* ViagemDAO.swift */; };
+		0C7A3EE5257B31F60000CC55 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7A3EE4257B31F60000CC55 /* TableViewCell.swift */; };
+		0C7A3EE7257B346A0000CC55 /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = 0C7A3EE6257B346A0000CC55 /* Assets */; };
 		0CE690372579C1C700B09376 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE690362579C1C700B09376 /* AppDelegate.swift */; };
 		0CE690392579C1C700B09376 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE690382579C1C700B09376 /* SceneDelegate.swift */; };
 		0CE6903B2579C1C700B09376 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE6903A2579C1C700B09376 /* ViewController.swift */; };
@@ -16,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C7A3EE0257B2DD00000CC55 /* Viagem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Viagem.swift; sourceTree = "<group>"; };
+		0C7A3EE2257B301F0000CC55 /* ViagemDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViagemDAO.swift; path = "../../Arquivos Projeto/ViagemDAO.swift"; sourceTree = "<group>"; };
+		0C7A3EE4257B31F60000CC55 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		0C7A3EE6257B346A0000CC55 /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Assets; path = "../../Arquivos Projeto/Assets"; sourceTree = "<group>"; };
 		0CE690332579C1C700B09376 /* Tur Viagens.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tur Viagens.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CE690362579C1C700B09376 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0CE690382579C1C700B09376 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,8 +65,12 @@
 			isa = PBXGroup;
 			children = (
 				0CE690362579C1C700B09376 /* AppDelegate.swift */,
-				0CE690382579C1C700B09376 /* SceneDelegate.swift */,
 				0CE6903A2579C1C700B09376 /* ViewController.swift */,
+				0C7A3EE4257B31F60000CC55 /* TableViewCell.swift */,
+				0C7A3EE0257B2DD00000CC55 /* Viagem.swift */,
+				0C7A3EE2257B301F0000CC55 /* ViagemDAO.swift */,
+				0C7A3EE6257B346A0000CC55 /* Assets */,
+				0CE690382579C1C700B09376 /* SceneDelegate.swift */,
 				0CE6903C2579C1C700B09376 /* Main.storyboard */,
 				0CE6903F2579C1C800B09376 /* Assets.xcassets */,
 				0CE690412579C1C800B09376 /* LaunchScreen.storyboard */,
@@ -126,6 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CE690432579C1C800B09376 /* LaunchScreen.storyboard in Resources */,
+				0C7A3EE7257B346A0000CC55 /* Assets in Resources */,
 				0CE690402579C1C800B09376 /* Assets.xcassets in Resources */,
 				0CE6903E2579C1C700B09376 /* Main.storyboard in Resources */,
 			);
@@ -138,7 +151,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C7A3EE1257B2DD00000CC55 /* Viagem.swift in Sources */,
+				0C7A3EE3257B301F0000CC55 /* ViagemDAO.swift in Sources */,
 				0CE6903B2579C1C700B09376 /* ViewController.swift in Sources */,
+				0C7A3EE5257B31F60000CC55 /* TableViewCell.swift in Sources */,
 				0CE690372579C1C700B09376 /* AppDelegate.swift in Sources */,
 				0CE690392579C1C700B09376 /* SceneDelegate.swift in Sources */,
 			);
@@ -291,7 +307,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.fabiana.Tur-Viagens";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Tur Viagens";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -308,7 +324,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.fabiana.Tur-Viagens";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Tur Viagens";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

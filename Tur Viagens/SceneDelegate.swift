@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  Tur Viagens
+//  Tur-Viagens
 //
-//  Created by Gabriel Petrovick on 03/12/20.
+//  Created by Fabiana Petrovick on 03/12/20.
 //  Copyright © 2020 Fabiana Petrovick. All rights reserved.
 //
 
