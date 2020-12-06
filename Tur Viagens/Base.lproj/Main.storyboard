@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AyC-nJ-t6w" userLabel="View Header">
-                                <rect key="frame" x="0.0" y="0.0" width="834" height="214"/>
+                                <rect key="frame" x="0.0" y="0.0" width="834" height="232"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BRASIL" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rUw-V1-62A">
                                         <rect key="frame" x="54" y="124.5" width="138" height="55"/>
@@ -30,8 +30,8 @@
                                             <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="40"/>
                                         </variation>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tur Viagens" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qJx-i5-A26">
-                                        <rect key="frame" x="336" y="23" width="162" height="42.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tur Viagens" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qJx-i5-A26">
+                                        <rect key="frame" x="336" y="16" width="162" height="42.5"/>
                                         <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="18"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -40,7 +40,7 @@
                                         </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ESPECIAL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zUz-10-wYq">
-                                        <rect key="frame" x="54" y="58" width="95" height="28"/>
+                                        <rect key="frame" x="54" y="58" width="190" height="37"/>
                                         <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -60,7 +60,7 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Y5m-Zp-JYc">
-                                <rect key="frame" x="0.0" y="254" width="834" height="920"/>
+                                <rect key="frame" x="0.0" y="272" width="834" height="902"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="175" id="ibw-O8-vu9" customClass="TableViewCell" customModule="Tur_Viagens" customModuleProvider="target">
@@ -129,10 +129,10 @@
                                 </prototypes>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gqf-3u-orw" userLabel="View Button Hoteis">
-                                <rect key="frame" x="150" y="190" width="100" height="50"/>
+                                <rect key="frame" x="150" y="190" width="150" height="75"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VO2-kU-F3z">
-                                        <rect key="frame" x="13" y="1.5" width="74" height="47"/>
+                                        <rect key="frame" x="38" y="14" width="74" height="47"/>
                                         <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
                                         <state key="normal" title="Hotéis">
                                             <color key="titleColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
@@ -146,15 +146,19 @@
                                 <constraints>
                                     <constraint firstItem="VO2-kU-F3z" firstAttribute="centerX" secondItem="Gqf-3u-orw" secondAttribute="centerX" id="KGo-Ag-O8o"/>
                                     <constraint firstItem="VO2-kU-F3z" firstAttribute="centerY" secondItem="Gqf-3u-orw" secondAttribute="centerY" id="U38-Ts-3vo"/>
-                                    <constraint firstAttribute="width" constant="100" id="g29-M8-b4H"/>
-                                    <constraint firstAttribute="height" constant="50" id="lGB-7v-nOQ"/>
+                                    <constraint firstAttribute="width" constant="100" id="g29-M8-b4H">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="150"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="50" id="lGB-7v-nOQ">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="75"/>
+                                    </constraint>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TIm-kZ-h5w" userLabel="View Button Pacotes">
-                                <rect key="frame" x="584" y="190" width="100" height="50"/>
+                                <rect key="frame" x="534" y="190" width="150" height="75"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3nt-J5-kUa">
-                                        <rect key="frame" x="5.5" y="1.5" width="89" height="47"/>
+                                        <rect key="frame" x="30.5" y="14" width="89" height="47"/>
                                         <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
                                         <state key="normal" title="Pacotes">
                                             <color key="titleColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
@@ -166,10 +170,16 @@
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.70773785752869067" blue="0.24907524179425045" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="ATr-rk-4Ze"/>
+                                    <constraint firstAttribute="width" constant="100" id="ATr-rk-4Ze">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="150"/>
+                                    </constraint>
                                     <constraint firstItem="3nt-J5-kUa" firstAttribute="centerY" secondItem="TIm-kZ-h5w" secondAttribute="centerY" id="QAf-fC-A5A"/>
-                                    <constraint firstItem="3nt-J5-kUa" firstAttribute="centerX" secondItem="TIm-kZ-h5w" secondAttribute="centerX" id="cJU-m2-Er0"/>
-                                    <constraint firstAttribute="height" constant="50" id="cMC-8G-sjb"/>
+                                    <constraint firstItem="3nt-J5-kUa" firstAttribute="centerX" secondItem="TIm-kZ-h5w" secondAttribute="centerX" id="cJU-m2-Er0">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="0.0"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="50" id="cMC-8G-sjb">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="75"/>
+                                    </constraint>
                                 </constraints>
                             </view>
                         </subviews>
@@ -179,7 +189,9 @@
                             <constraint firstItem="Y5m-Zp-JYc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8kw-P6-gMk"/>
                             <constraint firstItem="Y5m-Zp-JYc" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="B1P-Nn-Jpl"/>
                             <constraint firstItem="AyC-nJ-t6w" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="B8p-OM-hfK"/>
-                            <constraint firstItem="Y5m-Zp-JYc" firstAttribute="top" secondItem="Gqf-3u-orw" secondAttribute="bottom" constant="14" id="CvR-4f-Z1R"/>
+                            <constraint firstItem="Y5m-Zp-JYc" firstAttribute="top" secondItem="Gqf-3u-orw" secondAttribute="bottom" constant="14" id="CvR-4f-Z1R">
+                                <variation key="heightClass=regular-widthClass=regular" constant="7"/>
+                            </constraint>
                             <constraint firstItem="TIm-kZ-h5w" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="121" id="EQo-S1-qcq">
                                 <variation key="heightClass=regular-widthClass=regular" constant="190"/>
                             </constraint>
