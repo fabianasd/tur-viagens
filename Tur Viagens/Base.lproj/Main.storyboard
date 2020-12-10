@@ -352,8 +352,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Pacotes" id="iYV-k7-AJc"/>
                     <connections>
-                        <outlet property="PesquisarViagens" destination="r3c-71-vXB" id="Jli-Ja-cRO"/>
                         <outlet property="colecaoPacotesViagem" destination="fco-T1-MId" id="wjt-Zb-zaa"/>
+                        <outlet property="labelContadorPacotes" destination="KbI-ah-nyR" id="6wf-gY-yjN"/>
+                        <outlet property="pesquisarViagens" destination="r3c-71-vXB" id="VH6-dw-3IR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="whW-Te-tuU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

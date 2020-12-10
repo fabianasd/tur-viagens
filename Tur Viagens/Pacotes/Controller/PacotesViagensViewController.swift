@@ -11,15 +11,19 @@ import UIKit
 class PacotesViagensViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UISearchBarDelegate {
     
     @IBOutlet weak var colecaoPacotesViagem: UICollectionView!
-    @IBOutlet weak var PesquisarViagens: UISearchBar!
+    @IBOutlet weak var pesquisarViagens: UISearchBar!
+    @IBOutlet weak var labelContadorPacotes: UILabel!
     
-    let listaViagens:Array<Viagem> = ViagemDAO().retornaTodasAsViagens()
+    var listaComTodasViagens:Array<Viagem> = ViagemDAO().retornaTodasAsViagens()
+    var listaViagens:Array<Viagem> = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        listaViagens = listaComTodasViagens
         colecaoPacotesViagem.dataSource = self
         colecaoPacotesViagem.delegate = self
-        PesquisarViagens.delegate = self
+        pesquisarViagens.delegate = self
+        self.labelContadorPacotes.text = self.atualiazaContadosLabel()
     }
     
     override func didReceiveMemoryWarning() {
@@ -54,6 +58,27 @@ class PacotesViagensViewController: UIViewController, UICollectionViewDataSource
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        print(searchText)
+        listaViagens = listaComTodasViagens
+        if searchText != "" {
+            let filtroListaViagem = NSPredicate(format: "titulo contains[cd] %@",searchText)
+            let listaFiltrada:Array<Viagem> = (listaViagens as NSArray).filtered(using: filtroListaViagem) as! Array
+            listaViagens = listaFiltrada
+        }
+        self.labelContadorPacotes.text = self.atualiazaContadosLabel()
+        colecaoPacotesViagem.reloadData()
+        
+        // print(searchText)
+    }
+    //outra forma de fazer a pesquisa
+    //       func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+    //          listaViagens = listaComTodasViagens
+    //           if searchText != "" {
+    //               listaViagens = listaViagens.filter {$0.titulo.contains(searchText)}
+    //           }
+    //           colecaoPacotesViagem.reloadData()
+    //       }
+    
+    func  atualiazaContadosLabel() -> String {
+        return listaViagens.count == 1 ? "1 pacote encontrado" : "\(listaViagens.count) pacotes encontrados"
     }
 }
