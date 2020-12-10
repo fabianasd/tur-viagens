@@ -8,16 +8,18 @@
 
 import UIKit
 
-class PacotesViagensViewController: UIViewController, UICollectionViewDataSource {
+class PacotesViagensViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UISearchBarDelegate {
     
     @IBOutlet weak var colecaoPacotesViagem: UICollectionView!
+    @IBOutlet weak var PesquisarViagens: UISearchBar!
     
     let listaViagens:Array<Viagem> = ViagemDAO().retornaTodasAsViagens()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         colecaoPacotesViagem.dataSource = self
-        
+        colecaoPacotesViagem.delegate = self
+        PesquisarViagens.delegate = self
     }
     
     override func didReceiveMemoryWarning() {
@@ -44,5 +46,14 @@ class PacotesViagensViewController: UIViewController, UICollectionViewDataSource
         // celulaPacote.backgroundColor = UIColor.blue
         //cadastra no identifier(menu) o "celulaPacote"
         return celulaPacote
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let larguraCelula = collectionView.bounds.width / 2
+        return CGSize(width: larguraCelula-10, height: 160)
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        print(searchText)
     }
 }
