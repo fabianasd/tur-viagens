@@ -2,7 +2,7 @@
 //  PacoteViaagem.swift
 //  Tur Viagens
 //
-//  Created by Fabiana Petrovick on 10/12/20.
+//  Created by Gabriel Petrovick on 10/12/20.
 //  Copyright © 2020 Fabiana Petrovick. All rights reserved.
 //
 

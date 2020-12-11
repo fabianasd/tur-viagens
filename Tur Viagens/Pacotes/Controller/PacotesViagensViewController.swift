@@ -61,7 +61,7 @@ class PacotesViagensViewController: UIViewController, UICollectionViewDataSource
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         // cadastra o identifier show identity inspector > Storyboard ID
-        let controller = storyboard.instantiateViewController(withIdentifier: "detalhes") as! DetalhesViagensViewController
+        let controller = storyboard.instantiateViewController(withIdentifier: "detalhes") as! DetalheViagemViewController
         self.present(controller, animated: true, completion: nil)
     }
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
@@ -89,4 +89,3 @@ class PacotesViagensViewController: UIViewController, UICollectionViewDataSource
         return listaViagens.count == 1 ? "1 pacote encontrado" : "\(listaViagens.count) pacotes encontrados"
     }
 }
-

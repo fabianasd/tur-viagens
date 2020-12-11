@@ -361,10 +361,10 @@
             </objects>
             <point key="canvasLocation" x="671.20000000000005" y="133.5832083958021"/>
         </scene>
-        <!--Detalhes Viagens View Controller-->
+        <!--Detalhe Viagem View Controller-->
         <scene sceneID="jWh-lw-xsn">
             <objects>
-                <viewController storyboardIdentifier="detalhes" id="muS-d3-zJZ" customClass="DetalhesViagensViewController" customModule="Tur_Viagens" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="detalhes" id="muS-d3-zJZ" customClass="DetalheViagemViewController" customModule="Tur_Viagens" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="opb-tg-DZp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
