@@ -38,7 +38,7 @@ class PacotesViagensViewController: UIViewController, UICollectionViewDataSource
         let celulaPacote = collectionView.dequeueReusableCell(withReuseIdentifier: "celulaPacote", for: indexPath) as! PacoteViagemCollectionViewCell
         let pacoteAtual = listaViagens[indexPath.item]
         
-        celulaPacote.labelTitulo.text = pacoteAtual.viagem.titulo
+        celulaPacote.labelTitulo.text = (pacoteAtual.viagem.titulo)
         celulaPacote.labelQuantidadeDias.text = "\(pacoteAtual.viagem.quantidadeDeDias) dias"
         celulaPacote.labelPreco.text = "R$\(pacoteAtual.viagem.preco)"
         celulaPacote.imagemViagem.image = UIImage(named: pacoteAtual.viagem.caminhoDaImagem)
@@ -59,11 +59,14 @@ class PacotesViagensViewController: UIViewController, UICollectionViewDataSource
     
     //chamando a tela de detalhes
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let pacote = listaViagens[indexPath.item]
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         // cadastra o identifier show identity inspector > Storyboard ID
         let controller = storyboard.instantiateViewController(withIdentifier: "detalhes") as! DetalheViagemViewController
+        controller.pacoteSelecionado = pacote
         self.present(controller, animated: true, completion: nil)
     }
+    
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         listaViagens = listaComTodasViagens
         if searchText != "" {
@@ -74,7 +77,7 @@ class PacotesViagensViewController: UIViewController, UICollectionViewDataSource
         self.labelContadorPacotes.text = self.atualiazaContadosLabel()
         colecaoPacotesViagem.reloadData()
         
-        // print(searchText)
+      //   print(searchText)
     }
     //outra forma de fazer a pesquisa
     //       func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
