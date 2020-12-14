@@ -32,6 +32,10 @@
 		0CAEE9772583A5D800D8B50C /* icon_hotel.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CAEE9662583A5D800D8B50C /* icon_hotel.png */; };
 		0CC087A6257DBD1200898458 /* PacotesViagensViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC087A5257DBD1200898458 /* PacotesViagensViewController.swift */; };
 		0CC087A8257DBE6500898458 /* PacoteViagemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC087A7257DBE6500898458 /* PacoteViagemCollectionViewCell.swift */; };
+		0CE05E432586F3B2005A295E /* procurar.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CE05E422586F3B2005A295E /* procurar.png */; };
+		0CE05E472586F3F7005A295E /* pacotes.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CE05E462586F3F7005A295E /* pacotes.png */; };
+		0CE05E492586F43B005A295E /* detalhes.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CE05E482586F43B005A295E /* detalhes.png */; };
+		0CE05E4B2586F57D005A295E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0CE05E4A2586F57D005A295E /* README.md */; };
 		0CE690372579C1C700B09376 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE690362579C1C700B09376 /* AppDelegate.swift */; };
 		0CE690392579C1C700B09376 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE690382579C1C700B09376 /* SceneDelegate.swift */; };
 		0CE6903B2579C1C700B09376 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE6903A2579C1C700B09376 /* ViewController.swift */; };
@@ -66,6 +70,10 @@
 		0CAEE9662583A5D800D8B50C /* icon_hotel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_hotel.png; sourceTree = "<group>"; };
 		0CC087A5257DBD1200898458 /* PacotesViagensViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacotesViagensViewController.swift; sourceTree = "<group>"; };
 		0CC087A7257DBE6500898458 /* PacoteViagemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacoteViagemCollectionViewCell.swift; sourceTree = "<group>"; };
+		0CE05E422586F3B2005A295E /* procurar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = procurar.png; sourceTree = "<group>"; };
+		0CE05E462586F3F7005A295E /* pacotes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pacotes.png; sourceTree = "<group>"; };
+		0CE05E482586F43B005A295E /* detalhes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = detalhes.png; sourceTree = "<group>"; };
+		0CE05E4A2586F57D005A295E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0CE690332579C1C700B09376 /* Tur Viagens.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tur Viagens.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CE690362579C1C700B09376 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0CE690382579C1C700B09376 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -203,6 +211,16 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		0CE05E412586F289005A295E /* imagemApp */ = {
+			isa = PBXGroup;
+			children = (
+				0CE05E422586F3B2005A295E /* procurar.png */,
+				0CE05E462586F3F7005A295E /* pacotes.png */,
+				0CE05E482586F43B005A295E /* detalhes.png */,
+			);
+			path = imagemApp;
+			sourceTree = "<group>";
+		};
 		0CE6902A2579C1C700B09376 = {
 			isa = PBXGroup;
 			children = (
@@ -228,12 +246,14 @@
 				0C5C24B12583145C00AC382D /* DetalheViagem */,
 				0C7B396A257C3938009AEE03 /* ViagemDAO */,
 				0CE690362579C1C700B09376 /* AppDelegate.swift */,
+				0CE05E412586F289005A295E /* imagemApp */,
 				0CAEE9552583A5D800D8B50C /* Assets */,
 				0CE690382579C1C700B09376 /* SceneDelegate.swift */,
 				0CE6903C2579C1C700B09376 /* Main.storyboard */,
 				0CE6903F2579C1C800B09376 /* Assets.xcassets */,
 				0CE690412579C1C800B09376 /* LaunchScreen.storyboard */,
 				0CE690442579C1C800B09376 /* Info.plist */,
+				0CE05E4A2586F57D005A295E /* README.md */,
 			);
 			path = "Tur Viagens";
 			sourceTree = "<group>";
@@ -297,12 +317,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CE690432579C1C800B09376 /* LaunchScreen.storyboard in Resources */,
+				0CE05E472586F3F7005A295E /* pacotes.png in Resources */,
+				0CE05E492586F43B005A295E /* detalhes.png in Resources */,
 				0CAEE9712583A5D800D8B50C /* img3.jpg in Resources */,
 				0CAEE9692583A5D800D8B50C /* icon_package@2x.png in Resources */,
 				0CAEE96F2583A5D800D8B50C /* img6.jpg in Resources */,
+				0CE05E4B2586F57D005A295E /* README.md in Resources */,
 				0CAEE9682583A5D800D8B50C /* icon_search@2x.png in Resources */,
 				0CAEE9772583A5D800D8B50C /* icon_hotel.png in Resources */,
 				0CAEE9722583A5D800D8B50C /* img2.jpg in Resources */,
+				0CE05E432586F3B2005A295E /* procurar.png in Resources */,
 				0CAEE9702583A5D800D8B50C /* img7.jpg in Resources */,
 				0CAEE9732583A5D800D8B50C /* icon_breakfast.png in Resources */,
 				0CAEE96E2583A5D800D8B50C /* img4.jpg in Resources */,
