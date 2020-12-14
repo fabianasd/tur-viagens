@@ -225,7 +225,9 @@
 			isa = PBXGroup;
 			children = (
 				0CE690352579C1C700B09376 /* Tur Viagens */,
+				0CE05E412586F289005A295E /* imagemApp */,
 				0CE690342579C1C700B09376 /* Products */,
+				0CE05E4A2586F57D005A295E /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -246,14 +248,12 @@
 				0C5C24B12583145C00AC382D /* DetalheViagem */,
 				0C7B396A257C3938009AEE03 /* ViagemDAO */,
 				0CE690362579C1C700B09376 /* AppDelegate.swift */,
-				0CE05E412586F289005A295E /* imagemApp */,
 				0CAEE9552583A5D800D8B50C /* Assets */,
 				0CE690382579C1C700B09376 /* SceneDelegate.swift */,
 				0CE6903C2579C1C700B09376 /* Main.storyboard */,
 				0CE6903F2579C1C800B09376 /* Assets.xcassets */,
 				0CE690412579C1C800B09376 /* LaunchScreen.storyboard */,
 				0CE690442579C1C800B09376 /* Info.plist */,
-				0CE05E4A2586F57D005A295E /* README.md */,
 			);
 			path = "Tur Viagens";
 			sourceTree = "<group>";
