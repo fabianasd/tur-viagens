@@ -9,17 +9,19 @@
 import UIKit
 
 class DetalheViagemViewController: UIViewController {
-
+    
     @IBOutlet weak var imagemPacote: UIImageView!
     @IBOutlet weak var labelTituloPacoteViagem: UILabel!
     @IBOutlet weak var labelDescricaoPacoteViagem: UILabel!
     @IBOutlet weak var labelDataViagem: UILabel!
     @IBOutlet weak var labelPrecoPacoteViagem: UILabel!
+    @IBOutlet weak var scrollPrincipal: UIScrollView!
     
     
     var pacoteSelecionado:PacoteViagem? = nil
     override func viewDidLoad() {
         super.viewDidLoad()
+        NotificationCenter.default.addObserver(self, selector: #selector(aumentarScroll(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
         
         if let pacote = pacoteSelecionado {
             self.imagemPacote.image = UIImage(named: pacote.viagem.caminhoDaImagem)
@@ -32,24 +34,21 @@ class DetalheViagemViewController: UIViewController {
     }
     
     override func didReceiveMemoryWarning() {
-           super.didReceiveMemoryWarning()
-       }
+        super.didReceiveMemoryWarning()
+    }
+    
+    @objc func aumentarScroll(notification:Notification) {
+       self.scrollPrincipal.contentSize = CGSize(width: self.scrollPrincipal.frame.width, height: self.scrollPrincipal.frame.height + 320)
+        self.scrollPrincipal.contentOffset.y = 300
+          print("aquiiiiiiiiiiiiiiiiiiiiiiiiiiii")
+    }
     
     @IBAction func botaoVoltar(_ sender: UIButton) {
         self.dismiss(animated: true, completion: nil)
     }
-    
-
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+      @IBAction func textFieldEntrouFoco(_ sender: UITextField) {
+            let datePickerView = UIDatePicker()
+            datePickerView.datePickerMode = .date
+            sender.inputView = datePickerView
+        }
 }
