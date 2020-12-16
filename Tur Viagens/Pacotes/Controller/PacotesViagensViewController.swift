@@ -23,7 +23,7 @@ class PacotesViagensViewController: UIViewController, UICollectionViewDataSource
         colecaoPacotesViagem.dataSource = self
         colecaoPacotesViagem.delegate = self
         pesquisarViagens.delegate = self
-        self.labelContadorPacotes.text = self.atualiazaContadosLabel()
+        self.labelContadorPacotes.text = self.atualiazaContadorLabel()
     }
     
     override func didReceiveMemoryWarning() {
@@ -38,14 +38,7 @@ class PacotesViagensViewController: UIViewController, UICollectionViewDataSource
         let celulaPacote = collectionView.dequeueReusableCell(withReuseIdentifier: "celulaPacote", for: indexPath) as! PacoteViagemCollectionViewCell
         let pacoteAtual = listaViagens[indexPath.item]
         
-        celulaPacote.labelTitulo.text = (pacoteAtual.viagem.titulo)
-        celulaPacote.labelQuantidadeDias.text = "\(pacoteAtual.viagem.quantidadeDeDias) dias"
-        celulaPacote.labelPreco.text = "R$\(pacoteAtual.viagem.preco)"
-        celulaPacote.imagemViagem.image = UIImage(named: pacoteAtual.viagem.caminhoDaImagem)
-        
-        celulaPacote.layer.borderWidth = 0.5
-        celulaPacote.layer.borderColor = UIColor(red: 85.0/255.0, green: 85.0/255.0, blue: 85.0/255.0, alpha: 1).cgColor
-        celulaPacote.layer.cornerRadius = 8
+        celulaPacote.configuraCelula(pacoteViagem: pacoteAtual)
         
         // celulaPacote.backgroundColor = UIColor.blue
         //cadastra no identifier(menu) o "celulaPacote"
@@ -67,30 +60,30 @@ class PacotesViagensViewController: UIViewController, UICollectionViewDataSource
         //self.present(controller, animated: true, completion: nil)
         self.navigationController?.pushViewController(controller, animated: true)
     }
-//
-//    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-//        listaViagens = listaComTodasViagens
-//        if searchText != "" {
-//            let filtroListaViagem = NSPredicate(format: "VIAGEM.titulo contains[cd] %@",searchText)
-//            let listaFiltrada:Array<PacoteViagem> = (listaViagens as NSArray).filtered(using: filtroListaViagem) as! Array
-//            listaViagens = listaFiltrada
-//        }
-//        self.labelContadorPacotes.text = self.atualiazaContadosLabel()
-//        colecaoPacotesViagem.reloadData()
-//
-//      //   print(searchText)
-//    }
-    //outra forma de fazer a pesquisa
-           func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-              listaViagens = listaComTodasViagens
-               if searchText != "" {
-                listaViagens = listaViagens.filter {$0.viagem.titulo.contains(searchText)}
-               }
-            self.labelContadorPacotes.text = self.atualiazaContadosLabel()
-               colecaoPacotesViagem.reloadData()
-           }
     
-    func  atualiazaContadosLabel() -> String {
+    //    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+    //        listaViagens = listaComTodasViagens
+    //        if searchText != "" {
+    //            let filtroListaViagem = NSPredicate(format: "viagem.titulo contains[cd] %@",searchText)
+    //            let listaFiltrada:Array<PacoteViagem> = (listaViagens as NSArray).filtered(using: filtroListaViagem) as! Array
+    //            listaViagens = listaFiltrada
+    //        }
+    //        self.labelContadorPacotes.text = self.atualiazaContadorLabel()
+    //        colecaoPacotesViagem.reloadData()
+    //
+    //      //   print(searchText)
+    //    }
+    //outra forma de fazer a pesquisa
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        listaViagens = listaComTodasViagens
+        if searchText != "" {
+            listaViagens = listaViagens.filter {$0.viagem.titulo.contains(searchText)}
+        }
+        self.labelContadorPacotes.text = self.atualiazaContadorLabel()
+        colecaoPacotesViagem.reloadData()
+    }
+    
+    func  atualiazaContadorLabel() -> String {
         return listaViagens.count == 1 ? "1 pacote encontrado" : "\(listaViagens.count) pacotes encontrados"
     }
 }
