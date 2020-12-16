@@ -2,8 +2,8 @@
 //  PacoteViagemDAO.swift
 //  Alura Viagens
 //
-//  Created by Ândriu Coelho on 30/08/17.
-//  Copyright © 2017 Alura. All rights reserved.
+//  Created by Fabiana Petrovick on 04/12/20.
+//  Copyright © 2020 Fabiana Petrovick. All rights reserved.
 //
 
 import UIKit
@@ -16,7 +16,7 @@ class PacoteViagemDAO: NSObject {
         
         let pacoteBuzios = PacoteViagem(nomeDoHotel: "Resort Buzios Spa", descricao: "Hotel + café da manhã", dataViagem: "9~16 de setembro", viagem: Viagem(titulo: "Buzios", quantidadeDeDias: 7, preco: "1.990,99", caminhoDaImagem: "img7.jpg"))
         
-        let pacoteNatal = PacoteViagem(nomeDoHotel: "Resort Natal Show", descricao: "Hotel + café da manhã", dataViagem: "13~18 de setembroo", viagem: Viagem(titulo: "Natal", quantidadeDeDias: 5, preco: "1.700,00", caminhoDaImagem: "img8.jpg"))
+        let pacoteNatal = PacoteViagem(nomeDoHotel: "Resort Natal Show", descricao: "Hotel + café da manhã", dataViagem: "13~18 de setembro", viagem: Viagem(titulo: "Natal", quantidadeDeDias: 5, preco: "1.700,00", caminhoDaImagem: "img8.jpg"))
         
         let pacoteRioDeJaneiro = PacoteViagem(nomeDoHotel: "Resort RJ Spa", descricao: "Hotel + café da manhã", dataViagem: "9~13 de outubro", viagem: Viagem(titulo: "Rio de Janeiro", quantidadeDeDias: 4, preco: "2.300,00", caminhoDaImagem: "img9.jpg"))
         

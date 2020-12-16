@@ -43,7 +43,7 @@
 		0CE690432579C1C800B09376 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CE690412579C1C800B09376 /* LaunchScreen.storyboard */; };
 		0CF96A412589A4B300160B2E /* pacotesViagem.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CF96A3D2589A4B200160B2E /* pacotesViagem.png */; };
 		0CF96A482589A65B00160B2E /* confirmacao.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CF96A452589A65B00160B2E /* confirmacao.png */; };
-		0CF96A4C2589AB2A00160B2E /* DetalheViagem.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CF96A4B2589AB2A00160B2E /* DetalheViagem.png */; };
+		0CF96A4C2589AB2A00160B2E /* detalheViagem.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CF96A4B2589AB2A00160B2E /* detalheViagem.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,7 +85,7 @@
 		0CE690442579C1C800B09376 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0CF96A3D2589A4B200160B2E /* pacotesViagem.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pacotesViagem.png; sourceTree = "<group>"; };
 		0CF96A452589A65B00160B2E /* confirmacao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = confirmacao.png; sourceTree = "<group>"; };
-		0CF96A4B2589AB2A00160B2E /* DetalheViagem.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DetalheViagem.png; sourceTree = "<group>"; };
+		0CF96A4B2589AB2A00160B2E /* detalheViagem.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = detalheViagem.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,7 +218,7 @@
 		0CE05E412586F289005A295E /* imagemApp */ = {
 			isa = PBXGroup;
 			children = (
-				0CF96A4B2589AB2A00160B2E /* DetalheViagem.png */,
+				0CF96A4B2589AB2A00160B2E /* detalheViagem.png */,
 				0CF96A452589A65B00160B2E /* confirmacao.png */,
 				0CF96A3D2589A4B200160B2E /* pacotesViagem.png */,
 				0CE05E422586F3B2005A295E /* procurar.png */,
@@ -361,7 +361,7 @@
 				0CAEE9732583A5D800D8B50C /* icon_breakfast.png in Resources */,
 				0CAEE96E2583A5D800D8B50C /* img4.jpg in Resources */,
 				0CAEE9762583A5D800D8B50C /* img10.jpg in Resources */,
-				0CF96A4C2589AB2A00160B2E /* DetalheViagem.png in Resources */,
+				0CF96A4C2589AB2A00160B2E /* detalheViagem.png in Resources */,
 				0CAEE96C2583A5D800D8B50C /* icon_airplane.png in Resources */,
 				0CAEE9742583A5D800D8B50C /* img1.png in Resources */,
 				0CAEE96B2583A5D800D8B50C /* img8.jpg in Resources */,
