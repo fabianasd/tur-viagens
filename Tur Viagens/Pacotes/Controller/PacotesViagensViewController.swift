@@ -64,29 +64,31 @@ class PacotesViagensViewController: UIViewController, UICollectionViewDataSource
         // cadastra o identifier show identity inspector > Storyboard ID
         let controller = storyboard.instantiateViewController(withIdentifier: "detalhes") as! DetalheViagemViewController
         controller.pacoteSelecionado = pacote
-        self.present(controller, animated: true, completion: nil)
+        //self.present(controller, animated: true, completion: nil)
+        self.navigationController?.pushViewController(controller, animated: true)
     }
-    
-    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        listaViagens = listaComTodasViagens
-        if searchText != "" {
-            let filtroListaViagem = NSPredicate(format: "titulo contains[cd] %@",searchText)
-            let listaFiltrada:Array<PacoteViagem> = (listaViagens as NSArray).filtered(using: filtroListaViagem) as! Array
-            listaViagens = listaFiltrada
-        }
-        self.labelContadorPacotes.text = self.atualiazaContadosLabel()
-        colecaoPacotesViagem.reloadData()
-        
-      //   print(searchText)
-    }
+//
+//    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+//        listaViagens = listaComTodasViagens
+//        if searchText != "" {
+//            let filtroListaViagem = NSPredicate(format: "VIAGEM.titulo contains[cd] %@",searchText)
+//            let listaFiltrada:Array<PacoteViagem> = (listaViagens as NSArray).filtered(using: filtroListaViagem) as! Array
+//            listaViagens = listaFiltrada
+//        }
+//        self.labelContadorPacotes.text = self.atualiazaContadosLabel()
+//        colecaoPacotesViagem.reloadData()
+//
+//      //   print(searchText)
+//    }
     //outra forma de fazer a pesquisa
-    //       func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-    //          listaViagens = listaComTodasViagens
-    //           if searchText != "" {
-    //               listaViagens = listaViagens.filter {$0.titulo.contains(searchText)}
-    //           }
-    //           colecaoPacotesViagem.reloadData()
-    //       }
+           func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+              listaViagens = listaComTodasViagens
+               if searchText != "" {
+                listaViagens = listaViagens.filter {$0.viagem.titulo.contains(searchText)}
+               }
+            self.labelContadorPacotes.text = self.atualiazaContadosLabel()
+               colecaoPacotesViagem.reloadData()
+           }
     
     func  atualiazaContadosLabel() -> String {
         return listaViagens.count == 1 ? "1 pacote encontrado" : "\(listaViagens.count) pacotes encontrados"

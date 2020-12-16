@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HDc-cq-a7l">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="al2-uM-YeE">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -12,6 +12,7 @@
         <scene sceneID="j8g-WL-2Qd">
             <objects>
                 <tabBarController id="HDc-cq-a7l" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Jlx-Uv-mW7"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="7rB-hr-5iy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -262,18 +263,18 @@
                                         <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="r3c-71-vXB">
-                                        <rect key="frame" x="0.0" y="38" width="355" height="56"/>
+                                    <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="r3c-71-vXB">
+                                        <rect key="frame" x="0.0" y="38" width="355" height="100"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </searchBar>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6 pacotes encontrados" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KbI-ah-nyR">
-                                        <rect key="frame" x="0.0" y="99" width="355" height="23.5"/>
+                                        <rect key="frame" x="0.0" y="143" width="355" height="23.5"/>
                                         <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
                                         <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="fco-T1-MId">
-                                        <rect key="frame" x="0.0" y="127.5" width="355" height="470.5"/>
+                                        <rect key="frame" x="0.0" y="171.5" width="355" height="426.5"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="22Q-pG-wZi">
                                             <size key="itemSize" width="135" height="160"/>
@@ -447,14 +448,14 @@
                                                 <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="zuu-1S-a0F">
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="zuu-1S-a0F">
                                                 <rect key="frame" x="0.0" y="166.5" width="355" height="90"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="lcf-Vy-Xwr">
-                                                        <rect key="frame" x="0.0" y="0.0" width="117.5" height="90"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="118.5" height="90"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LJu-LM-Kkh">
-                                                                <rect key="frame" x="0.0" y="0.0" width="117.5" height="90"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="118.5" height="90"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_airplane.png" translatesAutoresizingMaskIntoConstraints="NO" id="DFb-Y1-aSQ">
                                                                         <rect key="frame" x="45" y="6" width="35" height="35"/>
@@ -495,10 +496,10 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Jgs-Fl-3tj">
-                                                        <rect key="frame" x="237.5" y="0.0" width="117.5" height="90"/>
+                                                        <rect key="frame" x="236.5" y="0.0" width="118.5" height="90"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G5C-jc-ecQ">
-                                                                <rect key="frame" x="0.0" y="0.0" width="117.5" height="90"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="118.5" height="90"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_breakfast.png" translatesAutoresizingMaskIntoConstraints="NO" id="aHL-Gp-0uj">
                                                                         <rect key="frame" x="45" y="5" width="35" height="35"/>
@@ -592,7 +593,7 @@
                                 <viewLayoutGuide key="frameLayoutGuide" id="w5J-85-aK6"/>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kkk-xU-Tu6">
-                                <rect key="frame" x="4" y="2" width="25" height="25"/>
+                                <rect key="frame" x="4" y="80" width="25" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="icon_back.png"/>
                                 <connections>
@@ -625,6 +626,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6hq-8u-c99" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1444" y="133.5832083958021"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Odj-mc-uxA">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="al2-uM-YeE" sceneMemberID="viewController">
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Z2e-hd-SpJ">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="HDc-cq-a7l" kind="relationship" relationship="rootViewController" id="nij-mk-urD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dZM-3o-xpT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1831" y="134"/>
         </scene>
         <!--Confirmacao Pagamento View Controller-->
         <scene sceneID="jBY-ow-AEU">
@@ -665,7 +682,7 @@
                                         <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Nyt-eR-ElR">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Nyt-eR-ElR">
                                         <rect key="frame" x="0.0" y="28.5" width="355" height="130"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="130" id="XNQ-di-EV9"/>
@@ -674,7 +691,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PORTO DE GALINHAS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NVe-3A-3p2">
                                         <rect key="frame" x="0.0" y="163.5" width="355" height="31.5"/>
                                         <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="23"/>
-                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sce-Tv-SYh">
@@ -715,6 +732,9 @@
                                         <state key="normal" title="Voltar para home">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="botaoVoltarHome:" destination="olw-qC-5qB" eventType="touchUpInside" id="mFk-Sd-95B"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -731,6 +751,7 @@
                         <viewLayoutGuide key="safeArea" id="dEo-6J-pec"/>
                     </view>
                     <connections>
+                        <outlet property="botaoVoltarHome" destination="h5h-wT-i2f" id="Bq8-Vf-6sx"/>
                         <outlet property="imagemPacoteViagem" destination="Nyt-eR-ElR" id="b9c-XN-gd6"/>
                         <outlet property="labelDataPacoteViagem" destination="Tey-UB-lVW" id="Km8-it-KNf"/>
                         <outlet property="labelDescricaoPacoteViagem" destination="M1v-qr-Z4s" id="bMX-XE-Cp3"/>
