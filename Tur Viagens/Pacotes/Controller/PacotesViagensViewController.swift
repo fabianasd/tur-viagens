@@ -75,7 +75,7 @@ class PacotesViagensViewController: UIViewController, UICollectionViewDataSource
     //
     //      //   print(searchText)
     //    }
-    //outra forma de fazer a pesquisa
+    //outra forma de fazer a pesquisa filtrada
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         listaViagens = listaComTodasViagens
         if searchText != "" {

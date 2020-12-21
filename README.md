@@ -1,7 +1,9 @@
 ## Tur Viagens
+
 #### Aplicativo para cadastro de viagens.
 
 ## Visualização: IPhone SE (2nd generation)
+
 ### Home
 
 ![Orders](https://raw.githubusercontent.com/fabianasd/tur-viagens/master/imagemApp/procurar.png)
@@ -12,14 +14,15 @@
 
 ### Detalhes da viagem
 
-![Orders](https://raw.githubusercontent.com/fabianasd/tur-viagens/master/imagemApp/detalheViagem.png)
+![Orders](https://raw.githubusercontent.com/fabianasd/tur-viagens/master/imagemApp/detalhe.png)
 
 ### Confirmação de compra
 
-![Orders](https://raw.githubusercontent.com/fabianasd/tur-viagens/master/imagemApp/confirmacao.png)
+![Orders](https://raw.githubusercontent.com/fabianasd/tur-viagens/master/imagemApp/confirmacaoPagamento.png)
 
 
 ## Visualização: iPadPro (9.7-inch)
+
 ### Home
 
 ![Orders](https://raw.githubusercontent.com/fabianasd/tur-viagens/master/imagemApp/procurariPad.png)
@@ -30,5 +33,9 @@
 
 ### Detalhes da viagem
 
-![Orders](https://raw.githubusercontent.com/fabianasd/tur-viagens/master/imagemApp/detalheViagemiPad.png)
+![Orders](https://raw.githubusercontent.com/fabianasd/tur-viagens/master/imagemApp/detalheiPad.png)
+
+### Confirmação de compra
+
+![Orders](https://raw.githubusercontent.com/fabianasd/tur-viagens/master/imagemApp/confirmacaoPagamentoiPad.png)
 

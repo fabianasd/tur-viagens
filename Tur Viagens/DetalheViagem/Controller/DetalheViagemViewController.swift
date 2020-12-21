@@ -50,7 +50,9 @@ class DetalheViagemViewController: UIViewController {
     
     @IBAction func botaoVoltar(_ sender: UIButton) {
         //self.dismiss(animated: true, completion: nil)
-        self.navigationController?.popToRootViewController(animated: true)
+        if let navigation = navigationController {
+            navigation.popViewController(animated: true)
+        }
     }
     
     @IBAction func botaoFinalizarCompra(_ sender: UIButton) {
