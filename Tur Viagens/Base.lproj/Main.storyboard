@@ -520,7 +520,7 @@
                                                                 <rect key="frame" x="0.0" y="0.0" width="118.5" height="90"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_airplane.png" translatesAutoresizingMaskIntoConstraints="NO" id="DFb-Y1-aSQ">
-                                                                        <rect key="frame" x="45" y="18" width="35" height="35"/>
+                                                                        <rect key="frame" x="38" y="18" width="35" height="35"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="35" id="Szz-Z7-Ekg">
                                                                                 <variation key="heightClass=regular-widthClass=regular" constant="50"/>
@@ -531,8 +531,8 @@
                                                                         </constraints>
                                                                     </imageView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Passagem aérea" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dJq-hz-43j">
-                                                                        <rect key="frame" x="7" y="69" width="140" height="21"/>
-                                                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="14"/>
+                                                                        <rect key="frame" x="8" y="69" width="141" height="21"/>
+                                                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="13"/>
                                                                         <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                                                                         <nil key="highlightedColor"/>
                                                                         <variation key="heightClass=regular-widthClass=regular">
@@ -544,10 +544,10 @@
                                                                 <constraints>
                                                                     <constraint firstItem="dJq-hz-43j" firstAttribute="top" secondItem="DFb-Y1-aSQ" secondAttribute="bottom" constant="16" id="021-uv-nSa"/>
                                                                     <constraint firstItem="DFb-Y1-aSQ" firstAttribute="top" secondItem="LJu-LM-Kkh" secondAttribute="top" constant="18" id="APH-l3-UvS"/>
-                                                                    <constraint firstItem="dJq-hz-43j" firstAttribute="centerX" secondItem="DFb-Y1-aSQ" secondAttribute="centerX" constant="14.5" id="DD6-H2-8vY"/>
+                                                                    <constraint firstItem="dJq-hz-43j" firstAttribute="centerX" secondItem="DFb-Y1-aSQ" secondAttribute="centerX" constant="23" id="DD6-H2-8vY"/>
                                                                     <constraint firstAttribute="bottom" secondItem="dJq-hz-43j" secondAttribute="bottom" id="PVv-0y-vcT"/>
-                                                                    <constraint firstItem="dJq-hz-43j" firstAttribute="leading" secondItem="LJu-LM-Kkh" secondAttribute="leading" constant="7" id="kKv-Dk-Gkg"/>
-                                                                    <constraint firstItem="DFb-Y1-aSQ" firstAttribute="leading" secondItem="LJu-LM-Kkh" secondAttribute="leading" constant="45" id="m9E-84-UjB"/>
+                                                                    <constraint firstItem="dJq-hz-43j" firstAttribute="leading" secondItem="LJu-LM-Kkh" secondAttribute="leading" constant="8" id="kKv-Dk-Gkg"/>
+                                                                    <constraint firstItem="DFb-Y1-aSQ" firstAttribute="leading" secondItem="LJu-LM-Kkh" secondAttribute="leading" constant="38" id="m9E-84-UjB"/>
                                                                 </constraints>
                                                             </view>
                                                         </subviews>
@@ -570,7 +570,7 @@
                                                                         </constraints>
                                                                     </imageView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hotel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dYg-NV-JTE">
-                                                                        <rect key="frame" x="23" y="70" width="72" height="20"/>
+                                                                        <rect key="frame" x="42.5" y="70" width="33" height="20"/>
                                                                         <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="13"/>
                                                                         <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                                                                         <nil key="highlightedColor"/>
@@ -585,7 +585,6 @@
                                                                     <constraint firstItem="dYg-NV-JTE" firstAttribute="top" secondItem="Thl-50-eKq" secondAttribute="bottom" constant="15" id="Hss-o5-K9e"/>
                                                                     <constraint firstItem="dYg-NV-JTE" firstAttribute="centerX" secondItem="NoZ-zx-ycn" secondAttribute="centerX" id="e16-7u-Nae"/>
                                                                     <constraint firstItem="Thl-50-eKq" firstAttribute="top" secondItem="NoZ-zx-ycn" secondAttribute="top" constant="20" id="urJ-dJ-sGC"/>
-                                                                    <constraint firstItem="dYg-NV-JTE" firstAttribute="leading" secondItem="NoZ-zx-ycn" secondAttribute="leading" constant="23" id="vb4-nC-dIn"/>
                                                                     <constraint firstAttribute="bottom" secondItem="dYg-NV-JTE" secondAttribute="bottom" id="zPl-bQ-roF"/>
                                                                 </constraints>
                                                             </view>
@@ -598,7 +597,7 @@
                                                                 <rect key="frame" x="0.0" y="0.0" width="118.5" height="90"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" image="icon_breakfast.png" translatesAutoresizingMaskIntoConstraints="NO" id="aHL-Gp-0uj">
-                                                                        <rect key="frame" x="35" y="18" width="35" height="35"/>
+                                                                        <rect key="frame" x="45.5" y="18" width="35" height="35"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="35" id="8De-qQ-k66">
                                                                                 <variation key="heightClass=regular-widthClass=regular" constant="50"/>
@@ -609,8 +608,8 @@
                                                                         </constraints>
                                                                     </imageView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Café da manhã" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="myn-HN-dqu">
-                                                                        <rect key="frame" x="7" y="67" width="104.5" height="23"/>
-                                                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="14"/>
+                                                                        <rect key="frame" x="17" y="69" width="91" height="23"/>
+                                                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="13"/>
                                                                         <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                                                                         <nil key="highlightedColor"/>
                                                                         <variation key="heightClass=regular-widthClass=regular">
@@ -620,12 +619,12 @@
                                                                 </subviews>
                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="trailing" secondItem="aHL-Gp-0uj" secondAttribute="trailing" constant="48.5" id="5k0-YQ-Q30"/>
-                                                                    <constraint firstAttribute="trailing" secondItem="myn-HN-dqu" secondAttribute="trailing" constant="7" id="6h2-Bl-RlS"/>
-                                                                    <constraint firstItem="myn-HN-dqu" firstAttribute="top" secondItem="aHL-Gp-0uj" secondAttribute="bottom" constant="14" id="DBH-ui-8P8"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="aHL-Gp-0uj" secondAttribute="trailing" constant="38" id="5k0-YQ-Q30"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="myn-HN-dqu" secondAttribute="trailing" constant="10.5" id="6h2-Bl-RlS"/>
+                                                                    <constraint firstItem="myn-HN-dqu" firstAttribute="top" secondItem="aHL-Gp-0uj" secondAttribute="bottom" constant="16" id="DBH-ui-8P8"/>
                                                                     <constraint firstItem="aHL-Gp-0uj" firstAttribute="top" secondItem="G5C-jc-ecQ" secondAttribute="top" constant="18" id="NAz-Lg-Sd4"/>
-                                                                    <constraint firstItem="myn-HN-dqu" firstAttribute="centerX" secondItem="G5C-jc-ecQ" secondAttribute="centerX" id="Ss0-7t-Oos"/>
-                                                                    <constraint firstAttribute="bottom" secondItem="myn-HN-dqu" secondAttribute="bottom" id="jUI-uf-dDh"/>
+                                                                    <constraint firstItem="myn-HN-dqu" firstAttribute="centerX" secondItem="G5C-jc-ecQ" secondAttribute="centerX" constant="3.25" id="Ss0-7t-Oos"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="myn-HN-dqu" secondAttribute="bottom" constant="-2" id="jUI-uf-dDh"/>
                                                                 </constraints>
                                                             </view>
                                                         </subviews>
@@ -777,7 +776,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6hq-8u-c99" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1442.1875" y="132.421875"/>
+            <point key="canvasLocation" x="1440.8" y="131.78410794602701"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Odj-mc-uxA">

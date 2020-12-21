@@ -59,9 +59,9 @@ class DetalheViagemViewController: UIViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let controller = storyboard.instantiateViewController(withIdentifier: "confirmacaoPagamento") as! ConfirmacaoPagamentoViewController
         controller.pacoteComprado = pacoteSelecionado
-      //  self.present(controller, animated: true, completion: nil)
+        //  self.present(controller, animated: true, completion: nil)
         self.navigationController?.pushViewController(controller, animated: true)
-
+        
     }
     @IBAction func textFieldEntrouFoco(_ sender: UITextField) {
         let datePickerView = UIDatePicker()

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C3E8E65258C4BE000A64C9B /* detalheiPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C3E8E64258C4BE000A64C9B /* detalheiPad.png */; };
+		0C3E8E65258C4BE000A64C9B /* detalhes_ViagemiPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C3E8E64258C4BE000A64C9B /* detalhes_ViagemiPad.png */; };
 		0C3E8E67258C4C6600A64C9B /* pacotesViagemiPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C3E8E66258C4C6600A64C9B /* pacotesViagemiPad.png */; };
 		0C3E8E69258C4C9500A64C9B /* procurariPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C3E8E68258C4C9500A64C9B /* procurariPad.png */; };
 		0C5C24B72583157D00AC382D /* DetalheViagemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5C24B62583157D00AC382D /* DetalheViagemViewController.swift */; };
@@ -37,6 +37,7 @@
 		0CB88E592590DDA2000D5775 /* detalhe.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CB88E4F2590DDA1000D5775 /* detalhe.png */; };
 		0CB88E5A2590DDA2000D5775 /* confirmacaoPagamento.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CB88E502590DDA1000D5775 /* confirmacaoPagamento.png */; };
 		0CB88E602590DDA2000D5775 /* confirmacaoPagamentoiPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CB88E562590DDA2000D5775 /* confirmacaoPagamentoiPad.png */; };
+		0CB88E622590E32D000D5775 /* detalhes_Viagem.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CB88E612590E32D000D5775 /* detalhes_Viagem.png */; };
 		0CC087A6257DBD1200898458 /* PacotesViagensViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC087A5257DBD1200898458 /* PacotesViagensViewController.swift */; };
 		0CE05E432586F3B2005A295E /* procurar.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CE05E422586F3B2005A295E /* procurar.png */; };
 		0CE05E4B2586F57D005A295E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0CE05E4A2586F57D005A295E /* README.md */; };
@@ -51,7 +52,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0C3E8E64258C4BE000A64C9B /* detalheiPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = detalheiPad.png; sourceTree = "<group>"; };
+		0C3E8E64258C4BE000A64C9B /* detalhes_ViagemiPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = detalhes_ViagemiPad.png; sourceTree = "<group>"; };
 		0C3E8E66258C4C6600A64C9B /* pacotesViagemiPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pacotesViagemiPad.png; sourceTree = "<group>"; };
 		0C3E8E68258C4C9500A64C9B /* procurariPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = procurariPad.png; sourceTree = "<group>"; };
 		0C5C24B62583157D00AC382D /* DetalheViagemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalheViagemViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +82,7 @@
 		0CB88E4F2590DDA1000D5775 /* detalhe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = detalhe.png; sourceTree = "<group>"; };
 		0CB88E502590DDA1000D5775 /* confirmacaoPagamento.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = confirmacaoPagamento.png; sourceTree = "<group>"; };
 		0CB88E562590DDA2000D5775 /* confirmacaoPagamentoiPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = confirmacaoPagamentoiPad.png; sourceTree = "<group>"; };
+		0CB88E612590E32D000D5775 /* detalhes_Viagem.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = detalhes_Viagem.png; sourceTree = "<group>"; };
 		0CC087A5257DBD1200898458 /* PacotesViagensViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacotesViagensViewController.swift; sourceTree = "<group>"; };
 		0CE05E422586F3B2005A295E /* procurar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = procurar.png; sourceTree = "<group>"; };
 		0CE05E4A2586F57D005A295E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -220,12 +222,13 @@
 			isa = PBXGroup;
 			children = (
 				0CE05E422586F3B2005A295E /* procurar.png */,
+				0CB88E612590E32D000D5775 /* detalhes_Viagem.png */,
 				0CF96A3D2589A4B200160B2E /* pacotesViagem.png */,
 				0CB88E4F2590DDA1000D5775 /* detalhe.png */,
 				0CB88E502590DDA1000D5775 /* confirmacaoPagamento.png */,
 				0C3E8E68258C4C9500A64C9B /* procurariPad.png */,
 				0C3E8E66258C4C6600A64C9B /* pacotesViagemiPad.png */,
-				0C3E8E64258C4BE000A64C9B /* detalheiPad.png */,
+				0C3E8E64258C4BE000A64C9B /* detalhes_ViagemiPad.png */,
 				0CB88E562590DDA2000D5775 /* confirmacaoPagamentoiPad.png */,
 			);
 			path = imagemApp;
@@ -361,13 +364,14 @@
 				0CB88E602590DDA2000D5775 /* confirmacaoPagamentoiPad.png in Resources */,
 				0CAEE9762583A5D800D8B50C /* img10.jpg in Resources */,
 				0CAEE96C2583A5D800D8B50C /* icon_airplane.png in Resources */,
-				0C3E8E65258C4BE000A64C9B /* detalheiPad.png in Resources */,
+				0C3E8E65258C4BE000A64C9B /* detalhes_ViagemiPad.png in Resources */,
 				0CB88E592590DDA2000D5775 /* detalhe.png in Resources */,
 				0CAEE9742583A5D800D8B50C /* img1.png in Resources */,
 				0CAEE96B2583A5D800D8B50C /* img8.jpg in Resources */,
 				0CB88E5A2590DDA2000D5775 /* confirmacaoPagamento.png in Resources */,
 				0CAEE9752583A5D800D8B50C /* img11.jpg in Resources */,
 				0CE690402579C1C800B09376 /* Assets.xcassets in Resources */,
+				0CB88E622590E32D000D5775 /* detalhes_Viagem.png in Resources */,
 				0CAEE96A2583A5D800D8B50C /* img9.jpg in Resources */,
 				0CAEE96D2583A5D800D8B50C /* img5.jpg in Resources */,
 				0CAEE9672583A5D800D8B50C /* icon_back.png in Resources */,

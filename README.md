@@ -14,7 +14,7 @@
 
 ### Detalhes da viagem
 
-![Orders](https://raw.githubusercontent.com/fabianasd/tur-viagens/master/imagemApp/detalhe.png)
+![Orders](https://raw.githubusercontent.com/fabianasd/tur-viagens/master/imagemApp/detalhes_Viagem.png)
 
 ### Confirmação de compra
 
@@ -33,7 +33,7 @@
 
 ### Detalhes da viagem
 
-![Orders](https://raw.githubusercontent.com/fabianasd/tur-viagens/master/imagemApp/detalheiPad.png)
+![Orders](https://raw.githubusercontent.com/fabianasd/tur-viagens/master/imagemApp/detalhes_ViagemiPad.png)
 
 ### Confirmação de compra
 
