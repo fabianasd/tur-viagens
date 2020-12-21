@@ -10,7 +10,7 @@
 
 ### Pacotes de viagem
 
-![Orders](https://raw.githubusercontent.com/fabianasd/tur-viagens/master/imagemApp/pacotesViagem.png)
+![Orders](https://raw.githubusercontent.com/fabianasd/tur-viagens/master/imagemApp/pacotes_Viagem.png)
 
 ### Detalhes da viagem
 

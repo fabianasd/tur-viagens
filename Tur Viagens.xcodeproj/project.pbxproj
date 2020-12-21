@@ -38,6 +38,7 @@
 		0CB88E5A2590DDA2000D5775 /* confirmacaoPagamento.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CB88E502590DDA1000D5775 /* confirmacaoPagamento.png */; };
 		0CB88E602590DDA2000D5775 /* confirmacaoPagamentoiPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CB88E562590DDA2000D5775 /* confirmacaoPagamentoiPad.png */; };
 		0CB88E622590E32D000D5775 /* detalhes_Viagem.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CB88E612590E32D000D5775 /* detalhes_Viagem.png */; };
+		0CB88E642590E702000D5775 /* pacotes_Viagem.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CB88E632590E702000D5775 /* pacotes_Viagem.png */; };
 		0CC087A6257DBD1200898458 /* PacotesViagensViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC087A5257DBD1200898458 /* PacotesViagensViewController.swift */; };
 		0CE05E432586F3B2005A295E /* procurar.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CE05E422586F3B2005A295E /* procurar.png */; };
 		0CE05E4B2586F57D005A295E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0CE05E4A2586F57D005A295E /* README.md */; };
@@ -48,7 +49,6 @@
 		0CE6903E2579C1C700B09376 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CE6903C2579C1C700B09376 /* Main.storyboard */; };
 		0CE690402579C1C800B09376 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CE6903F2579C1C800B09376 /* Assets.xcassets */; };
 		0CE690432579C1C800B09376 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CE690412579C1C800B09376 /* LaunchScreen.storyboard */; };
-		0CF96A412589A4B300160B2E /* pacotesViagem.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CF96A3D2589A4B200160B2E /* pacotesViagem.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,6 +83,7 @@
 		0CB88E502590DDA1000D5775 /* confirmacaoPagamento.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = confirmacaoPagamento.png; sourceTree = "<group>"; };
 		0CB88E562590DDA2000D5775 /* confirmacaoPagamentoiPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = confirmacaoPagamentoiPad.png; sourceTree = "<group>"; };
 		0CB88E612590E32D000D5775 /* detalhes_Viagem.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = detalhes_Viagem.png; sourceTree = "<group>"; };
+		0CB88E632590E702000D5775 /* pacotes_Viagem.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pacotes_Viagem.png; sourceTree = "<group>"; };
 		0CC087A5257DBD1200898458 /* PacotesViagensViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacotesViagensViewController.swift; sourceTree = "<group>"; };
 		0CE05E422586F3B2005A295E /* procurar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = procurar.png; sourceTree = "<group>"; };
 		0CE05E4A2586F57D005A295E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -95,7 +96,6 @@
 		0CE6903F2579C1C800B09376 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0CE690422579C1C800B09376 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0CE690442579C1C800B09376 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0CF96A3D2589A4B200160B2E /* pacotesViagem.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pacotesViagem.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,8 +222,8 @@
 			isa = PBXGroup;
 			children = (
 				0CE05E422586F3B2005A295E /* procurar.png */,
+				0CB88E632590E702000D5775 /* pacotes_Viagem.png */,
 				0CB88E612590E32D000D5775 /* detalhes_Viagem.png */,
-				0CF96A3D2589A4B200160B2E /* pacotesViagem.png */,
 				0CB88E4F2590DDA1000D5775 /* detalhe.png */,
 				0CB88E502590DDA1000D5775 /* confirmacaoPagamento.png */,
 				0C3E8E68258C4C9500A64C9B /* procurariPad.png */,
@@ -354,7 +354,6 @@
 				0CAEE9682583A5D800D8B50C /* icon_search@2x.png in Resources */,
 				0CAEE9772583A5D800D8B50C /* icon_hotel.png in Resources */,
 				0C3E8E69258C4C9500A64C9B /* procurariPad.png in Resources */,
-				0CF96A412589A4B300160B2E /* pacotesViagem.png in Resources */,
 				0CAEE9722583A5D800D8B50C /* img2.jpg in Resources */,
 				0CE05E432586F3B2005A295E /* procurar.png in Resources */,
 				0CAEE9702583A5D800D8B50C /* img7.jpg in Resources */,
@@ -370,6 +369,7 @@
 				0CAEE96B2583A5D800D8B50C /* img8.jpg in Resources */,
 				0CB88E5A2590DDA2000D5775 /* confirmacaoPagamento.png in Resources */,
 				0CAEE9752583A5D800D8B50C /* img11.jpg in Resources */,
+				0CB88E642590E702000D5775 /* pacotes_Viagem.png in Resources */,
 				0CE690402579C1C800B09376 /* Assets.xcassets in Resources */,
 				0CB88E622590E32D000D5775 /* detalhes_Viagem.png in Resources */,
 				0CAEE96A2583A5D800D8B50C /* img9.jpg in Resources */,
